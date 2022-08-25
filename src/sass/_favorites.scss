@@ -1,0 +1,30 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+}
+.favorites__title {
+    text-align: center;
+}
+.favorites__text {
+    text-align: center;
+}
+
+.favorites__galery {
+    display: flex;
+    flex-wrap: wrap;
+    gap:  110px;
+    margin-top: 0;
+
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+
+    @media screen and (min-width: 1280px) {
+        --items: 3;
+    }}
