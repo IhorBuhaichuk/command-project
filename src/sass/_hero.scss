@@ -3,8 +3,8 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 32px;
+    bottom: -73px;
     display: block;
     width: 320px;
     height: 320px;
@@ -14,7 +14,8 @@
     border-radius: 50%;
   }
   @media screen and (min-width: 1280px) {
-    top: 0;
+    top: 14px;
+    right: 16px;
 
     width: 580px;
     height: 580px;
@@ -34,11 +35,21 @@
   padding-bottom: 50px;
   width: 100%;
 
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
     max-width: 537px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 160px;
     max-width: 505px;
   }
 }
@@ -85,10 +96,13 @@
 }
 
 .order__btn {
+  display: inline-block;
+  padding: 6px 17px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 
   color: #2c2c2c;
   background: #bbf330;
