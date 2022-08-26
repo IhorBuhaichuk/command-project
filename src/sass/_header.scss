@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-.header-container {
-    display: flex;
-}
-
 .header-list {
     display: flex;
     align-items: center;
@@ -16,6 +12,7 @@
 }
 .header-btn {
     display: block;
+    margin-right: 32px;
     width: 100px;
     height: 32px;
     border-radius: 30px;
