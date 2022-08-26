@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+:root {
+    /* fonts */
+    --main-font: Roboto, sans-serif;
+}
 html {
     box-sizing: border-box;
 }
@@ -20,7 +24,17 @@ h6,
 p {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: currentColor;
+}
 
+li {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
 /* Base styles */
 
 .container {
@@ -29,7 +43,7 @@ p {
     padding-left: 20px;
     padding-right: 20px;
 
-    @media screen and (min-width: 320x) {
+    @media screen and (min-width: 320px) {
         width: 320px;
     }
 
