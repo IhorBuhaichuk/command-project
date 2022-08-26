@@ -2,6 +2,9 @@
   display: none;
 
   @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     display: block;
     width: 320px;
     height: 320px;
@@ -11,6 +14,8 @@
     border-radius: 50%;
   }
   @media screen and (min-width: 1280px) {
+    top: 0;
+
     width: 580px;
     height: 580px;
 
@@ -18,4 +23,75 @@
     border: 26px solid #ffe550;
     border-radius: 50%;
   }
+}
+
+.container-hero {
+  position: relative;
+}
+
+.hero__block {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 537px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 505px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 28px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 28px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.hero__text {
+  margin-bottom: 28px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+
+    max-width: 336px;
+
+    font-size: 16px;
+  }
+}
+
+.order__btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+
+  color: #2c2c2c;
+  background: #bbf330;
+  border-radius: 30px;
+  border: none;
 }
