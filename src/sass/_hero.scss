@@ -1,0 +1,21 @@
+.hero__slider {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 320px;
+    height: 320px;
+
+    background: #fefefe;
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+
+    background: #fefefe;
+    border: 26px solid #ffe550;
+    border-radius: 50%;
+  }
+}

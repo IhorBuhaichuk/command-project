@@ -1,10 +1,27 @@
-<!-- hero section -->
-<div>
-  <h1>Enjoy Your Favorite Food From Anywhere</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-    dolor interdum nulla, ut commodo diam libero vitae erat.
-  </p>
-</div>
-<div></div>
+<section class="hero">
+  <div class="container">
+    <div class="hero__block">
+      <h1 class="hero__title title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__text text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="order__btn btn" type="button">Order Now</button>
+    </div>
+    <div class="hero__slider">
+      <img
+        srcset="
+          ./images/hero_png/slider1@1x_lg_528_result.png   528w,
+          ./images/hero_png/slider1@2x_lg_1056_result.png 1056w,
+          ./images/hero_png/slider1@1x_md_292_result.png   292w,
+          ./images/hero_png/slider1@2x_md_584_result.png   584w
+        "
+        sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+        src="./images/hero_png/slider1@1x_lg_528_result.png"
+        alt="Burger"
+        width="100%"
+      />
+    </div>
+  </div>
+</section>
