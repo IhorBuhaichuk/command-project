@@ -3,6 +3,15 @@
 :root {
     /* fonts */
     --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+
+    /* text colors */
+        --main-txt-cl: #2C2C2C;
+        --accent-txt-color:  #BBF330;;
+
+    /* bg colors */
+        --accent-yellow: #FFE550;
+        --accent-green: #BBF330;
 }
 html {
     box-sizing: border-box;
@@ -24,16 +33,15 @@ h6,
 p {
     margin: 0;
 }
-a {
+.link {
     text-decoration: none;
     color: currentColor;
 }
 
-li {
+.list {
+    list-style: none;
     padding: 0;
     margin: 0;
-
-    list-style: none;
 }
 /* Base styles */
 

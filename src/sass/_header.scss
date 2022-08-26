@@ -1,11 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
 .header-container {
+    display: flex;
 }
 
 .header-list {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     align-items: center;
     gap: 28px;
+}
+.header-btn {
+    display: block;
+    width: 100px;
+    height: 32px;
+    border-radius: 30px;
+    background-color: var(--accent-green);
 }
 
 .header-link {
