@@ -1,26 +1,26 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 :root {
-    /* fonts */
-    --main-font: Roboto, sans-serif;
-    --secondary-font: Raleway, sans-serif;
+  /* fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
 
-    /* text colors */
-        --main-txt-cl: #2C2C2C;
-        --accent-txt-color:  #BBF330;;
+  /* text colors */
+  --main-txt-cl: #2c2c2c;
+  --accent-txt-color: #bbf330;
 
-    /* bg colors */
-        --accent-yellow: #FFE550;
-        --accent-green: #BBF330;
+  /* bg colors */
+  --accent-yellow: #ffe550;
+  --accent-green: #bbf330;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* reset styles */
@@ -31,39 +31,43 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 .link {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* Base styles */
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
