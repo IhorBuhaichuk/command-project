@@ -121,6 +121,12 @@
   }
 }
 
+.offerings__item:first-child {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 28px;
+  }
+}
+
 .offerings__icon {
   margin-bottom: 8px;
 }
@@ -149,11 +155,18 @@
 }
 
 .order__btn--white {
-  padding: 10px 32px;
+  padding: 10px 22px;
   margin-right: 21px;
 
   background-color: #ffffff;
-  border: 2px solid #7eb101;
+  border: 2px solid var(--dark-green-color);
+
+  transition: border-color var(--animation);
+
+  &:hover,
+  &:focus &:active {
+    border-color: var(--focus-green-color);
+  }
 }
 
 .offerings__link {
@@ -162,12 +175,14 @@
 
   color: #000;
 
+  transition: color var(--animation);
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
-}
 
-.offerings__link::after {
-  content: ' >';
-  color: #000;
+  &:hover,
+  &:focus {
+    color: var(--focus-green-color);
+  }
 }
