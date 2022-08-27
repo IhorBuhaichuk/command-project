@@ -1,6 +1,16 @@
 .header {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    width: 66px;
+    height: 52px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
     gap: 28px;
     align-items: center;
 }
@@ -14,7 +24,6 @@
 }
 .header-btn {
     display: block;
-    margin-right: 0;
     width: 100px;
     height: 32px;
     border-radius: 30px;
