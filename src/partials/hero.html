@@ -7,11 +7,21 @@
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button class="order__btn btn" type="button" data-modal-open>
+      <button
+        class="order__btn order__btn--green btn"
+        type="button"
+        data-modal-open
+      >
         Order Now
       </button>
     </div>
     <div class="hero__slider">
+      <svg class="slider-left">
+        <use href="./images/icons/icons-sprite.svg#icon-slider_left"></use>
+      </svg>
+      <svg class="slider-right">
+        <use href="./images/icons/icons-sprite.svg#icon-slider_right"></use>
+      </svg>
       <img
         srcset="
           ./images/hero_png/slider1@1x_lg_528_result.png   528w,
@@ -24,6 +34,9 @@
         alt="Burger"
         width="100%"
       />
+      <svg class="slider-right" width="48" height="40">
+        <use href="./images/icons/icons-sprite.svg#icon-slider_right"></use>
+      </svg>
     </div>
   </div>
 </section>
