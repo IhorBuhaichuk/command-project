@@ -78,18 +78,44 @@
         @media screen and (max-width: 767px){
             border: 11px solid #BBF330;
             border-radius: 50%;
+            //transform: rotate(-45deg);
         }
         
         @media screen and (min-width: 768px) {
                 border: 14px solid #BBF330;
                 border-radius: 50%;
+                //transform: rotate(-45deg);
+                
             }
         
         @media screen and (min-width: 1280px) {
                 border: 16px solid #BBF330;
                 border-radius: 50%;
+                //transform: rotate(-45deg);
             }
     }
+    .favorites__img{
+        animation: rotateWithOrigin 5000ms linear 3000ms infinite;
+    }
+    
+    .favorites__img::before {
+            transform-origin: center center;
+        }
+
+    .favorites__img::after {
+            top: center;
+            left: center;
+        }
+
+        @keyframes rotateWithOrigin {
+            0% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+    
+            100% {
+                transform: rotate3d(0, 0, 1, 360deg);
+            }
+        }
 
     .favorites__img{
         @media screen and (max-width: 767px) {
