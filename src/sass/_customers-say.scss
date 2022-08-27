@@ -1,0 +1,113 @@
+.customers{
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  background-image: url(../images/background_png/bg-customersay@2x_sm_result.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media screen and (min-width: 768px) {
+  
+      background-image: url(../images/background_png/bg-customersay@2x_md_result.png);
+    }
+  
+    @media screen and (min-width: 1280px) {
+     
+  
+      background-image: url(../images/background_png/bg-customersay@2x_lg_result.png);
+      background-size: cover;
+    }
+  }
+
+.customers__block{
+  @media screen and (min-width: 1280px) {
+      padding-top: 83px;
+      max-width: 573px;
+    }
+}
+.customer__title{ 
+  margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 768px) {
+
+        font-size: 42px;
+        line-height: 1.2;
+}
+}
+.customer__subtitle{
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+      max-width: 656px;
+      font-size: 16px;
+  }
+}
+.customers__ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 67px;
+
+    margin-bottom: 32px;
+  }
+}
+
+.customers__fon{
+  background-color: var(--white-color);
+  
+}
+
+.customers__reviews{
+flex-basis: 50%;
+padding: 14px 40px;
+
+}
+
+.customers__text{
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+color: var(--title-text-color)
+}
+.reviews__name{
+  font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+}
+
+.reviews__profession{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+}
+.customers__ul .customers__reviews{
+
+  border-right: 1px solid   #7EB101;
+}

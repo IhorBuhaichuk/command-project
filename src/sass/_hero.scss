@@ -97,7 +97,7 @@
 
 .order__btn {
   display: inline-block;
-  padding: 6px 17px;
+  padding: 6px 18px;
 
   font-weight: 400;
   font-size: 14px;
@@ -108,4 +108,13 @@
   background: #bbf330;
   border-radius: 30px;
   border: none;
+}
+
+.order__btn--green {
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus-btn);
+  }
 }
