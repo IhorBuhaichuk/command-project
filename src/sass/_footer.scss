@@ -4,40 +4,51 @@
 }
 
 .footer__section {
-  padding-top: 60px;
+  padding-top: 64px;
   padding-bottom: 60px;
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url(../images/footer/fruitfuter@1x_sm_result.jpg);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/footer/fruitfuter@2x_sm_result.jpg);
+  @media screen and (min-width: 320px) {
+    background-size: 104px, 253px, 110px;
+    background-position: top 0px right, top 495px center, top 132px left;
+    background-image: url(../images/footer/right@1x_mobile.png),
+      url(../images/footer/central@1x_mobile.png),
+      url(../images/footer/left@1x_mobile.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/right@2x_mobile.png),
+        url(../images/footer/central@2x_mobile.png),
+        url(../images/footer/left@2x_mobile.png);
+    }
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
-
-    background-image: url(../images/footer/fruitfuter@1x_md_result.jpg);
+    background-size: 203px, 785px;
+    background-position: top 0px right, top 0px center;
+    background-image: url(../images/footer/right@1x_tablet.png),
+      url(../images/footer/central@1x_tablet.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/fruitfuter@2x_md_result.jpg);
+      background-image: url(../images/footer/right@2x_tablet.png),
+        url(../images/footer/central@2x_tablet.png);
     }
   }
 
   @media screen and (min-width: 1280px) {
-    max-height: 382px;
-    background-image: url(../images/footer/fruitfuter@1x_lg_result.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-image: url(../images/footer/central@1x_desctop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/fruitfuter@2x_lg_result.jpg);
+      background-image: url(../images/footer/central@2x_desctop.jpg);
     }
   }
 }
