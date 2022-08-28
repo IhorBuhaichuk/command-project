@@ -10,7 +10,7 @@
 
   @media screen and (min-width: 320px) {
     background-size: 104px, 253px, 110px;
-    background-position: top 0px right, top 495px center, top 132px left;
+    background-position: top 0px right, top 575px center, top 132px left;
     background-image: url(../images/footer/right@1x_mobile.png),
       url(../images/footer/central@1x_mobile.png),
       url(../images/footer/left@1x_mobile.png);
@@ -89,6 +89,12 @@
 
   @media screen and (min-width: 1280px) {
     margin-left: 145px;
+  }
+}
+
+.footer-nav__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 
