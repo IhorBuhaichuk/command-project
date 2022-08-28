@@ -45,6 +45,9 @@ margin-bottom: 100px;
 
     object-fit: cover;
     object-position: center;
+
+    -webkit-animation: wobble-hor-bottom 3s infinite both;
+        animation: wobble-hor-bottom 3s infinite both;
 }
 
 .subscribe__title {
@@ -118,6 +121,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  border: 0;
  background-color: #BBF330;
  border-radius: 30px;
+
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus{
