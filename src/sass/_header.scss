@@ -6,6 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    padding: 10px 20px 10px 20px;
+
+        @media screen and (min-width: 768px) {
+            padding: 10px 32px 10px 32px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 10px 16px 10px 16px;
+        }
 }
 
 .header-logo {
