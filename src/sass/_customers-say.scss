@@ -20,16 +20,11 @@
     }
   
     @media screen and (min-width: 1280px) {
-      padding-bottom: 200px;
-      margin-bottom: -10px;
-      padding-top: 100px;
     
         background-image: url(../images/background_png/bg-customersay@2x_lg_result.png);
         background-size: cover;
       }
   }
-
-
 .customers__block{
   @media screen and (min-width: 1280px) {
       max-width: 573px;
