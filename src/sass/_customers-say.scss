@@ -4,19 +4,19 @@
 
   margin-bottom: -48px;
 
-  background-size: cover;
+  background-size: 100% 140%;
   background-repeat: no-repeat;
   background-position: bottom;
 
-  background-image: url(../images/background_png/bg-customersay@2x_sm_result.png);
+  background-image: url(../images/icons/customers-bg-sm.svg);
  
   @media screen and (min-width: 768px) {
     margin-bottom: -70px;
     padding-top: 60px;
     padding-bottom: 120px;
   
-  background-image: url(../images/background_png/bg-customersay@2x_md_result.png);
-  background-size: cover;
+  background-image: url(../images/icons/customers-bg-md.svg);
+  background-size: 100% 100%;
     }
   
     @media screen and (min-width: 1280px) {
@@ -24,15 +24,15 @@
       margin-bottom: -10px;
       padding-top: 100px;
     
-        background-image: url(../images/background_png/bg-customersay@2x_lg_result.png);
-        background-size: cover;
+        background-image: url(../images/icons/customers-bg-lg.svg);
+        background-size: 100% 100%;
       }
   }
-.customers__block{
-  @media screen and (min-width: 1280px) {
-      max-width: 573px;
-    }
-}
+  //.customers__block{
+   // @media screen and (min-width: 1280px) {
+   //     max-width: 573px;
+    //  }
+ // }
 
 
 
@@ -60,7 +60,6 @@
   color: var(--title-text-color);
 
   @media screen and (min-width: 768px) {
-      margin-bottom: 24px;
       max-width: 656px;
       font-size: 16px;
   }
@@ -91,18 +90,20 @@
   border-radius: 0px 30px 30px 30px;
 
     @media screen and (max-width: 767px){
-       width: 280px;
+       //width: 280px;
        //height: 228px;
        padding: 8px;
+       margin-bottom: 24px;
+
   }
     @media screen and (min-width: 768px) {
-       width: 336px;
+       //width: 336px;
        //height: 244px;
-       padding: 12px;
-    }
+      padding: 12px;
+   }
   
     @media screen and (min-width: 1280px) {
-       width: 501px;
+       //width: 501px;
        //height: 227px;
        padding: 14px;
     } 
@@ -112,17 +113,25 @@
   margin-bottom: 28px;
   padding-left: 14px;
   padding-right: 14px;
-}
 
+}
 .customers__reviews{
 flex-basis: 50%;
 
 //padding: 14px 40px;
-
+@media screen and (max-width: 767px){
+  width: 280px;
 }
-.customers__reviews:not(:last-child) {
-margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+width: 336px;
 }
+@media screen and (min-width: 1280px) {
+  width: 501px;
+}
+}
+//.customers__reviews:not(:last-child) {
+  //margin-bottom: 24px;
+//}
 
 .customers__text{
 font-family: 'Roboto';
