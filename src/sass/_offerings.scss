@@ -9,7 +9,7 @@
   padding-bottom: 60px;
 
   background-image: url(../images/background_png/bg-offerings@1x_sm_result.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
 
@@ -27,7 +27,6 @@
     padding-bottom: 75px;
 
     background-image: url(../images/background_png/bg-offerings@1x_lg_result.png);
-    background-size: cover;
   }
 }
 
@@ -44,7 +43,7 @@
   text-align: center;
 
   -webkit-animation: wobble-hor-bottom 3s infinite both;
-    animation: wobble-hor-bottom 3s infinite both;
+  animation: wobble-hor-bottom 3s infinite both;
 
   @media screen and (min-width: 1280px) {
     margin-right: 90px;

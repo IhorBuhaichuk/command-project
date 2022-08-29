@@ -1,10 +1,25 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 160px;
+  }
+}
+
 .hero__slider {
   display: none;
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    right: 32px;
+
     bottom: -73px;
+    right: 32px;
+
     display: block;
     width: 320px;
     height: 320px;
@@ -14,7 +29,7 @@
     border-radius: 50%;
   }
   @media screen and (min-width: 1280px) {
-    top: 14px;
+    top: -146px;
     right: 16px;
 
     width: 580px;
@@ -31,25 +46,21 @@
 }
 
 .hero__block {
-  padding-top: 60px;
-  padding-bottom: 50px;
-  width: 100%;
-
   @media screen and (min-width: 480px) {
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 0;
+
     max-width: 537px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 160px;
     max-width: 505px;
   }
 }
@@ -63,7 +74,7 @@
   line-height: 1.18;
 
   -webkit-animation: text-shadow-drop-center 5s infinite both;
-    animation: text-shadow-drop-center 5s infinite both;
+  animation: text-shadow-drop-center 5s infinite both;
 
   color: var(--title-text-color);
 
