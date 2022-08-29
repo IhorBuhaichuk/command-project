@@ -1,16 +1,14 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #fefefe;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-}
 
-.footer__section {
-  padding-top: 64px;
-  padding-bottom: 60px;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 320px) {
     background-size: 104px, 253px, 110px;
-    background-position: top 0px right, top 575px center, top 132px left;
+    background-position: top 0px right, top 563px center, top 132px left;
     background-image: url(../images/footer/right@1x_mobile.png),
       url(../images/footer/central@1x_mobile.png),
       url(../images/footer/left@1x_mobile.png);
@@ -28,7 +26,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-size: 203px, 785px;
-    background-position: top 0px right, top 0px center;
+    background-position: top 0px right, top -12px center;
     background-image: url(../images/footer/right@1x_tablet.png),
       url(../images/footer/central@1x_tablet.png);
 
@@ -41,33 +39,33 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-size: contain;
+    background-size: 1211px;
     background-position: bottom;
-    background-image: url(../images/footer/central@1x_desctop.jpg);
+    background-image: url(../images/footer/central@1x_desktop.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/central@2x_desctop.jpg);
+      background-image: url(../images/footer/central@2x_desktop.png);
     }
   }
 }
 
-.footer__container {
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
   @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 80px;
   }
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 40px;
 }
 
 .footer__logo {
@@ -79,19 +77,16 @@
 }
 
 .footer-nav__list {
-  margin-right: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     text-align: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: 114px;
+    margin-bottom: 57px;
     gap: 28px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 145px;
   }
 }
 
@@ -102,6 +97,7 @@
 }
 
 .footer-nav__link {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -115,13 +111,16 @@
 }
 
 .footer-subscribe {
-  @media screen and (min-width: 768px) {
+  width: 100%;
+  @media screen and (min-width: 1280px) {
+    max-width: 395px;
   }
 }
 
 .footer-subscribe__title {
+  display: inline-block;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   color: #2c2c2c;
@@ -131,7 +130,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 13px;
     margin-bottom: 12px;
   }
 }
@@ -174,7 +173,7 @@
 }
 
 .footer-subscribe__btn {
-  display: inline-flex;
+  display: flex;
   text-align: center;
   margin-left: auto;
   margin-bottom: 20px;
@@ -203,7 +202,6 @@
 
 .footer-subscribe__agreement {
   display: inline-block;
-  margin-bottom: 60px;
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
@@ -211,7 +209,6 @@
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
-    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -225,6 +222,8 @@
 }
 
 .footer-category {
+  display: block;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -242,6 +241,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
+    gap: 20px;
   }
 }
 
@@ -262,9 +262,6 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.footer-copyright__item {
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
