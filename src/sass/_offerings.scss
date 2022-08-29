@@ -43,6 +43,9 @@
   margin-bottom: 60px;
   text-align: center;
 
+  -webkit-animation: wobble-hor-bottom 3s infinite both;
+    animation: wobble-hor-bottom 3s infinite both;
+
   @media screen and (min-width: 1280px) {
     margin-right: 90px;
     margin-bottom: 0;
@@ -162,6 +165,7 @@
   border: 2px solid var(--dark-green-color);
 
   transition: border-color var(--animation);
+  animation: animate125 3000ms infinite 1000ms;
 
   &:hover,
   &:focus &:active {

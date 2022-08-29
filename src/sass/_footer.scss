@@ -73,6 +73,9 @@
 .footer__logo {
   width: 69px;
   height: 51px;
+
+  -webkit-animation: blink-1 3s infinite both;
+    animation: blink-1 3s infinite both;
 }
 
 .footer-nav__list {
@@ -186,6 +189,7 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  
   @media screen and (min-width: 768px) {
     display: block;
     align-items: center;
