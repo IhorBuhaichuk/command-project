@@ -23,6 +23,9 @@
 .header-logo {
     width: 66px;
     height: 52px;
+
+    -webkit-animation: blink-1 5s infinite both;
+        animation: blink-1 5s infinite both;
 }
 
 .header-nav {

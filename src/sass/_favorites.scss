@@ -135,7 +135,7 @@
     }
 
         .favorites__img {
-             animation: rotateWithOrigin 5000ms linear 3000ms infinite;
+             animation: rotateWithOrigin 6000ms linear 4000ms infinite;
          }
     
          .favorites__img::before {
@@ -145,16 +145,6 @@
          .favorites__img::after {
              top: center;
              left: center;
-         }
-    
-         @keyframes rotateWithOrigin {
-             0% {
-                 transform: rotate3d(0, 0, 1, 0deg);
-             }
-    
-             100% {
-                 transform: rotate3d(0, 0, 1, 360deg);
-             }
          }
 
     .favorites__item:nth-child(n + 4) {
