@@ -29,8 +29,11 @@
             <a class="header-link link" href="/">Contact</a>
           </li>
         </ul>
+
         <div class="header-btn-container">
-          <button class="header-btn" type="button">Order now</button>
+          <button class="header-btn" type="button" data-modal-open>
+            Order now
+          </button>
         </div>
       </nav>
     </div>
@@ -46,3 +49,63 @@
     </button>
   </div>
 </header>
+
+<!-- Modal -->
+
+<div class="backdrop-header is-hidden" data-modal>
+  <div class="modal-header">
+    <button class="modal-btn" data-modal-close>
+      <svg class="modal-btn-icon" width="11" height="11">
+        <use href="./images/icons/icons-sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+    <form class="register-form-header">
+      <strong class="register-form-header__tittle">Order Form</strong>
+      <div class="register-form-header__group" role="group">
+          <label class="register-form-header__wrap">
+            <span class="register-form-header__label">Name</span>
+            <input
+              class="register-form-header__input"
+              type="text"
+              name="username"
+              minlength="3"
+              maxlength="16"
+              autofocus
+              required
+              placeholder="Your name"
+            />
+          </label>
+          <label for="" class="register-form-header__wrap">
+            <span class="register-form-header__label">Phone number</span>
+            <input
+              class="register-form-header__input"
+              type="tel"
+              name="user-phone"
+              minlength="3"
+              maxlength="16"
+              required
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </label>
+          <label class="register-form-header__wrap">
+            <span class="register-form-header__label">E-mail</span>
+            <input
+              class="register-form-header__input"
+              type="email"
+              name="email"
+              minlength="3"
+              maxlength="16"
+              required
+              placeholder="example@gmail.com"
+            />
+          </label>
+          <button class="register-form-header__btn" type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+          </svg>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
