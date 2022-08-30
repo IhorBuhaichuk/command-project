@@ -16,23 +16,55 @@
       </button>
     </div>
     <div class="hero__slider">
-      <svg class="slider-left">
+      <svg class="swiper-button-prev slider-btn slider-left">
         <use href="./images/icons/icons-sprite.svg#icon-slider_left"></use>
       </svg>
-      <svg class="slider-right">
+      <svg class="swiper-button-next slider-btn slider-right">
         <use href="./images/icons/icons-sprite.svg#icon-slider_right"></use>
       </svg>
-      <img
-        srcset="
-          ./images/hero_png/slider1@1x_lg_528_result.png   528w,
-          ./images/hero_png/slider1@2x_lg_1056_result.png 1056w,
-          ./images/hero_png/slider1@1x_md_292_result.png   292w,
-          ./images/hero_png/slider1@2x_md_584_result.png   584w
-        "
-        sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
-        src="./images/hero_png/slider1@1x_lg_528_result.png"
-        alt="Burger"
-      />
+      <dix class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/hero_png/slider1@1x_lg_528_result.png   528w,
+                ./images/hero_png/slider1@2x_lg_1056_result.png 1056w,
+                ./images/hero_png/slider1@1x_md_292_result.png   292w,
+                ./images/hero_png/slider1@2x_md_584_result.png   584w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+              src="./images/hero_png/slider1@1x_lg_528_result.png"
+              alt="Burger"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/hero_png/slider2@1x_lg_528_result.png   528w,
+                ./images/hero_png/slider2@2x_lg_1056_result.png 1056w,
+                ./images/hero_png/slider2@1x_md_292_result.png   292w,
+                ./images/hero_png/slider2@2x_md_584_result.png   584w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+              src="./images/hero_png/slider2@1x_lg_528_result.png"
+              alt="Burger"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/hero_png/slider3@1x_lg_528_result.png   528w,
+                ./images/hero_png/slider3@2x_lg_1056_result.png 1056w,
+                ./images/hero_png/slider3@1x_md_292_result.png   292w,
+                ./images/hero_png/slider3@2x_md_584_result.png   584w
+              "
+              sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+              src="./images/hero_png/slider3@1x_lg_528_result.png"
+              alt="Burger"
+            />
+          </div>
+        </div>
+      </dix>
     </div>
     <div class="to-top">
       <a class="to-top__link" href="#header">
