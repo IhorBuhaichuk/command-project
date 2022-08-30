@@ -27,16 +27,21 @@
     -webkit-animation: blink-1 5s infinite both;
         animation: blink-1 5s infinite both;
 }
+.header-leftside-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @media screen and (max-width: 768px) {
+            display: none;
+        }
+}
 .header-nav {
     display: flex;
     align-items: center;
     gap: 28px;
     align-items: center;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
+    margin-right: 30px;
 }
 
 .header-list {
@@ -54,6 +59,7 @@
     border-radius: 30px;
     background-color: var(--accent-green);
     border: none;
+    cursor: pointer;
 
     font-weight: 400;
     font-size: 14px;
@@ -179,7 +185,7 @@
         font-size: 16px;
         line-height: 140%;
         margin-left: 12px;
-        padding-bottom: 2px;
+        margin-bottom: 2px;
 }
 .register-form-header__wrap {
     display: block;
