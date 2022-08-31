@@ -42,7 +42,7 @@
     margin-right: 30px;
 }
 
-.header-list {
+.header-nav__list {
     display: flex;
     align-items: center;
     gap: 28px;
@@ -67,7 +67,7 @@
     background-color: #b5ff00;
 }
 
-.header-link {
+.header-nav__link {
     font-family: 'Roboto';
     padding-top: 28px;
     padding-bottom: 28px;
@@ -78,7 +78,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item:hover {
+.header-nav__item:hover {
     color: #bbf330;
     text-decoration: underline;
 }
