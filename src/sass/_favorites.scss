@@ -80,12 +80,14 @@
             border: 11px solid #BBF330;
             border-radius: 50%;
             //transform: rotate(-45deg);
+            animation: rotateWithOrigin 6000ms linear 250ms infinite;
         }
         
         @media screen and (min-width: 768px) {
                 border: 14px solid #BBF330;
                 border-radius: 50%;
                 //transform: rotate(-45deg);
+                animation: rotateWithOrigin 6000ms linear 250ms infinite;
                 
             }
         
@@ -93,6 +95,7 @@
                 border: 16px solid #BBF330;
                 border-radius: 50%;
                 //transform: rotate(-45deg);
+                animation: rotateWithOrigin 6000ms linear 250ms infinite;
             }
     }
     
@@ -134,9 +137,7 @@
             }
     }
 
-        .favorites__img {
-             animation: rotateWithOrigin 6000ms linear 4000ms infinite;
-         }
+        
     
          .favorites__img::before {
              transform-origin: center center;
