@@ -71,7 +71,6 @@
 .footer__logo {
   width: 69px;
   height: 51px;
-
 }
 
 .footer-nav__list {
@@ -102,10 +101,10 @@
   color: #000000;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-nav__link:hover {
-  color: #bbf330;
+  &:hover {
+    color: #bbf330;
+  }
 }
 
 .footer-subscribe {
@@ -160,14 +159,14 @@
     min-width: 279px;
     margin: 0;
   }
-}
 
-.footer-subscribe__input:hover {
-  border: 0.854167px solid #7eb101;
-}
+  &:hover {
+    border: 0.854167px solid #7eb101;
+  }
 
-.footer-subscribe__input:invalid {
-  border: 0.854167px solid #ff705d;
+  &:invalid {
+    border: 0.854167px solid #ff705d;
+  }
 }
 
 .footer-subscribe__btn {
@@ -186,16 +185,15 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
   @media screen and (min-width: 768px) {
     display: block;
     align-items: center;
     margin: 0;
   }
-}
 
-.footer-subscribe__btn:hover {
-  background-color: #ffe550;
+  &:hover {
+    background-color: #ffe550;
+  }
 }
 
 .footer-subscribe__agreement {
