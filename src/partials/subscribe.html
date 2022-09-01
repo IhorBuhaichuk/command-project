@@ -1,36 +1,33 @@
 <section class="subscribe">
-  <div class="container">
-    <div class="subscribe__img">
-      <img
-        class="img__banana"
-        srcset="
+    <div class="container">
+        <div class="subscribe__img">
+            <img class="img__banana" srcset="
           ./images\banan_png\banan@1x_lg_608_result.png   608w,
           ./images\banan_png\banan@1x_md_281_result.png   281w,
           ./images\banan_png\banan@1x_sm_280_result.png   280w,
           ./images\banan_png\banan@2x_lg_1216_result.png 1216w,
           ./images\banan_png\banan@2x_md_562_result.png   562w,
           ./images\banan_png\banan@2x_sm_560_result.png   560w
-        "
-        sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, 100vw"
-        src="./images\banan_png\banan@1x_lg_608_result.png"
-        alt="Banana"
-      />
+        " sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, 100vw"
+                src="./images\banan_png\banan@1x_lg_608_result.png" alt="Banana" />
+        </div>
+        <div class="subscribe__block">
+            <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+            <p class="subscribe__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                varius enim in eros elementum tristique.
+            </p>
+            <form action="#" class="subscribe-form">
+                <input class="subscribe-form__input" type="email" name="email" placeholder="Enter your email" />
+                <div class="error-form">
+                    <svg class="icon-frame" width="12" height="12">
+                        <use href="./images/icons/icons-sprite.svg#icon-frame"></use>
+                    </svg>
+                    <p class="error-message">Not a valid email address (example@email.com)</p>
+                </div>
+
+                <button class="subscribe-form__btn btn" type="submit">Subscribe</button>
+            </form>
+        </div>
     </div>
-    <div class="subscribe__block">
-      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-      <p class="subscribe__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
-      </p>
-      <form action="#" class="subscribe-form">
-        <input
-          class="subscribe-form__input"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-        <button class="subscribe-form__btn btn" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
 </section>
