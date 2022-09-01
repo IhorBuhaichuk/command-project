@@ -79,6 +79,7 @@
         @media screen and (max-width: 767px){
             border: 11px solid #BBF330;
             border-radius: 50%;
+            animation: rotateWithOrigin 6000ms linear 250ms infinite;
             //transform: rotate(-45deg);
         }
         
@@ -86,6 +87,7 @@
                 border: 14px solid #BBF330;
                 border-radius: 50%;
                 //transform: rotate(-45deg);
+                animation: rotateWithOrigin 6000ms linear 250ms infinite;
                 
             }
         
@@ -93,6 +95,7 @@
                 border: 16px solid #BBF330;
                 border-radius: 50%;
                 //transform: rotate(-45deg);
+                animation: rotateWithOrigin 6000ms linear 250ms infinite;
             }
     }
     
@@ -135,7 +138,7 @@
     }
 
         .favorites__img {
-             animation: rotateWithOrigin 6000ms linear 4000ms infinite;
+             //animation: rotateWithOrigin 6000ms linear 2000ms infinite;
          }
     
          .favorites__img::before {
